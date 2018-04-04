@@ -8,8 +8,8 @@
 
       // Preloader Website
       $(window).load(function() {
-         $('#loader-wrapper').delay(250).fadeOut();
-         $('#loader').delay(450).fadeOut('slow');
+         $('#loader-wrapper').delay(150).fadeOut();
+         $('#loader').delay(200).fadeOut();
       });
 
 $(document).ready(function() {

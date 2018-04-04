@@ -1,27 +1,27 @@
 @charset "UTF-8";
-/********************************** 
+/**********************************
    Author: Symbiotic-Themes
    Theme: Chappi (App Landingpage)
-   Version: 1.0.1   
+   Version: 1.0.1
 **********************************/
 
 
 /******************
 
    Legend:
-     
-   == 01. Globals 
+
+   == 01. Globals
    == 02. Header
    == 03. Content
    == 04. Footer
-  
+
 ******************/
 
 
 /**************
 **   FONTS   **
 **************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500|Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500|Pacifico);
 
 
 /******************
@@ -993,7 +993,7 @@ cite span {
 .testis .owl-next {
     right: -100px;
     margin-top: 30px !important;
-}   
+}
 
 
 /* Price */
