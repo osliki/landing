@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+# Osliki - Blockchain Package Delivery Platform
 
-You can use the [editor on GitHub](https://github.com/osliki/landing/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+About the project:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- ENG https://medium.com/@artod/rewriting-an-application-on-blockchain-b9944e5e2ec7
+- RUS https://habrahabr.ru/post/351398
 
-### Markdown
+Contracts are currently deployed on the test network Ethereum Ropsten. Test ethers are dispensed [here](http://faucet.ropsten.be:3001/). Addresses of contracts:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/osliki/landing/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+-  Osliki [0xa5AF61cE7deEb042e7Ad6A2118b183D3733E1D99 ](https://ropsten.etherscan.io/address/0xa5af61ce7deeb042e7ad6a2118b183d3733e1d99#readContract)
+- ERC20-compliant Token OSLIK [0x7ee36e1ddac343649edaa622f9bb067ed74545b2 ](https://ropsten.etherscan.io/address/0x7ee36e1ddac343649edaa622f9bb067ed74545b2)
