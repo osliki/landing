@@ -491,7 +491,7 @@ header {
     font-weight: 350;
 }
 
-.nav li a, .slide-menu .nav li.download-btn a, .nav li:first-child a.active {
+.nav li a, .slide-menu .nav .download-btn a, .nav li:first-child a.active {
     color: #944d75;
     font-weight: 300;
     display: inline-block;
@@ -508,8 +508,6 @@ header {
 .slide-menu .nav li a {
     color: #fff;
 }
-
-
 
 .slide-menu .nav li:first-child a.active {
     color: #fff;
@@ -534,7 +532,7 @@ header {
     border-radius: 5px;
 }
 
-.nav .download-btn a:hover {
+.nav .download-btn a:hover, .slide-menu .nav li.download-btn a:hover {
     background: #944d75;
     color: #fff;
 }
@@ -544,6 +542,7 @@ header {
     border-color: #fff;
     color: #fff;
 }
+
 
 
 /* Intro Heading */
@@ -652,6 +651,7 @@ header {
 .get-started {
     padding-bottom: 100px;
     padding-top: 100px;
+
 }
 
 .icon-wrap {
@@ -677,7 +677,7 @@ header {
     border: 1px solid #944d75;
     text-align: center;
     border-radius: 50%;
-    padding-top: 20px;
+    padding-top: 22px;
     transition: all 0.2s;
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
@@ -747,7 +747,7 @@ header {
 }
 
 .feature img {
-    position: absolute;
+    position: absolufte;
 }
 
 .feature .first {
