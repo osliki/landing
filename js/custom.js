@@ -35,7 +35,7 @@ $(document).ready(function() {
 
       //--------------------------------------------
 
-
+/*
       // Phone Carousel
       var mySwiper = $('.swiper-container').swiper({
 
@@ -107,7 +107,7 @@ $(document).ready(function() {
          pagination: true,
          autoHeight: true,
       });
-
+*/
       //-----------------------------------------------
 
 
@@ -146,7 +146,7 @@ $(document).ready(function() {
 
       //----------------------------------------------
 
-
+/*
       // Parallax
       $.stellar({
          horizontalOffset: 0,
@@ -154,7 +154,7 @@ $(document).ready(function() {
          responsive: false,
          horizontalScrolling: false,
       });
-
+*/
 
       //----------------------------------------------
 
@@ -162,20 +162,24 @@ $(document).ready(function() {
       // Mailchimp
       $('#newsletter-form').ajaxChimp({
         callback: callbackFunction,
-        url:'http://testtesttest.us9.list-manage2.com/subscribe/post?u=008a9a2d943991d29216928b5&id=058e093803'
+        url:'https://github.us18.list-manage.com/subscribe/post?u=92d75b2935aedd2b4648e8bc4&amp;id=f401a698c4'
       });
 
+
       function callbackFunction (resp) {
-          console.log(resp);
           $("#mc-email").removeClass("error");
+
+          var $subsMsg = $(".subscribe-message");
+
           if (resp.result === 'success') {
-            $(".subscribe-message").html('<i class="fa fa-check"></i> We have sent you a confirmation email.').fadeIn().css("color","#29b94f");
-          }
-          else{
+            $subsMsg.html('<i class="fa fa-check"></i> You have successfully subscribed!').fadeIn().css("color","#29b94f");
+          } else {
             var msg = resp.msg.split("-")[1];
-            $(".subscribe-message").html('<i class="fa fa-warning"></i> You must enter a valid e-mail address.').fadeIn().css("color","#ef4b4b");
+            $subsMsg.html('<i class="fa fa-warning"></i> Invalid e-mail address or you have already subscribed.').fadeIn().css("color","#ef4b4b");
             $("#mc-email").addClass("error");
           }
+
+          $subsMsg.val('');
       }
 
 

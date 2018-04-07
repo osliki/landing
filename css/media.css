@@ -67,7 +67,7 @@
    .arrow-right { right: 10px; }
    .arrow-left, .arrow-right { margin-top: -40px; }
 
-   .get-started { padding-top: 160px; }
+   .get-started { padding-top: 50px; }
 
  .feature img { /*width: 55%;*/ }
    .feature .first { left: 110px; top: 70px; }
@@ -88,7 +88,7 @@
 @media (max-width: 767px) {
 
    .get-started { padding-bottom: 50px; }
-   .feature, .gallery, .testis, .pricing, .newsletter, .contact { padding: 50px 0; }
+   .feature, .gallery, .testis, .pricing, /*.newsletter, */.contact { padding: 70px 0; }
    .download { padding: 50px 0 20px; }
    .feature { text-align: center; }
    .feature-block i { position: relative; margin-bottom: 20px; }

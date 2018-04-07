@@ -209,6 +209,10 @@ h2 {
     text-align: center;
 }
 
+.center {
+    text-align: center;
+}
+
 .heading:after {
     content: "";
     display: block;
@@ -360,7 +364,7 @@ section {
     z-index: 3;
 }
 
-.skew .feature:first-child, .skew .download, .skew .testis, .skew .newsletter {
+.skew .feature:first-child, .skew .download, .skew .testis/*, .skew .newsletter*/ {
     padding: 140px 0;
 }
 
@@ -1106,7 +1110,7 @@ cite span {
 
 /* Newsletter */
 .newsletter {
-    padding: 100px 0;
+    padding: 0px 0;
     position: relative;
 }
 
@@ -1119,7 +1123,7 @@ cite span {
 .newsletter .input-field {
     width: 335px;
     margin-left: -256.6px;
-    background: url(../../img/bg/mail-ico.jpg) 20px center no-repeat #fff;
+    /*background: url(../../img/bg/mail-ico.jpg) 20px center no-repeat #fff;*/
     padding-left: 60px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
