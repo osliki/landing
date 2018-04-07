@@ -167,19 +167,21 @@ $(document).ready(function() {
 
 
       function callbackFunction (resp) {
-          $("#mc-email").removeClass("error");
-
           var $subsMsg = $(".subscribe-message");
+          var $email = $("#mc-email");
+
+          $email.removeClass("error");
 
           if (resp.result === 'success') {
             $subsMsg.html('<i class="fa fa-check"></i> You have successfully subscribed!').fadeIn().css("color","#29b94f");
+            $email.val('');
           } else {
             var msg = resp.msg.split("-")[1];
             $subsMsg.html('<i class="fa fa-warning"></i> Invalid e-mail address or you have already subscribed.').fadeIn().css("color","#ef4b4b");
             $("#mc-email").addClass("error");
           }
 
-          $subsMsg.val('');
+
       }
 
 
