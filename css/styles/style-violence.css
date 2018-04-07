@@ -747,7 +747,7 @@ header {
 }
 
 .feature img {
-    position: absolufte;
+    /*position: absolute;*/
 }
 
 .feature .first {
