@@ -550,6 +550,12 @@ header {
     text-shadow: inherit;
     border-radius: 5px;
 }
+.slide-menu  .nav .download-btn a {
+  background: #fff;
+  color: #944d75;
+  text-shadow: inherit;
+  border-radius: 5px;
+}
 
 .nav .download-btn a:hover, .slide-menu .nav li.download-btn a:hover {
     background: #944d75;
@@ -680,6 +686,10 @@ header {
 
 .token .subheadline {
   margin-bottom: 20px;
+}
+
+.token .subheadline:last-child {
+  margin-bottom: 50px;
 }
 
 .icon-wrap {
@@ -1362,10 +1372,10 @@ footer p {
     .navbar-collapse {
         background: #944d75;
     }
-
+/*
     .nav .download-btn a:hover, .nav .download-btn a.active {
         color: #944d75;
-    }
+    }*/
 
     .nav li a {
         color: #fff;

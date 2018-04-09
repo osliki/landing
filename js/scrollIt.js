@@ -71,7 +71,7 @@
          */
         var keyNavigation = function (e) {
             var key = e.which;
-            if($('html,body').is(':animated') && (key == settings.upKey || key == settings.downKey)) {
+            if((key == settings.upKey || key == settings.downKey) && $('html,body').is(':animated') ) {
                 return false;
             }
             if(key == settings.upKey && active > 0) {
@@ -90,6 +90,7 @@
          * sets the currently active item
          */
         var updateActive = function(ndx) {
+            if(active === ndx) return;
             if(settings.onPageChange && ndx && (active != ndx)) settings.onPageChange(ndx);
 
             active = ndx;
@@ -102,12 +103,16 @@
          *
          * watches currently active item and updates accordingly
          */
-        var watchActive = function() {
-            var winTop = $(window).scrollTop();
+        var $win = $(window),
+          $scrollIndex = $('[data-scroll-index]');
 
-            var visible = $('[data-scroll-index]').filter(function(ndx, div) {
-                return winTop >= $(div).offset().top + settings.topOffset &&
-                winTop < $(div).offset().top + (settings.topOffset) + $(div).outerHeight()
+        var watchActive = function() {
+            var winTop = $win.scrollTop();
+
+            var visible = $scrollIndex.filter(function(ndx, div) {
+                var $div = $(div);
+                return winTop >= $div.offset().top + settings.topOffset &&
+                winTop < $div.offset().top + (settings.topOffset) + $div.outerHeight()
             });
             var newActive = visible.first().attr('data-scroll-index');
             updateActive(newActive);
@@ -120,7 +125,7 @@
 
         $(window).on('keydown', keyNavigation);
 
-        $('body').on('click','[data-scroll-nav], [data-scroll-goto]', function(e){
+        $('body [data-scroll-nav], body [data-scroll-goto]').on('click', function(e){
             e.preventDefault();
             doScroll(e);
         });

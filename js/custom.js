@@ -16,8 +16,13 @@ var $body = $("body");
 $(document).ready(function() {
 
 
+
+
+
       // Sticky Navabr
       $("header").before($(".top-bar").clone().addClass("slidedown"));
+
+
 
     $window.on("scroll", function () {
          $body.toggleClass("slide-menu", ($window.scrollTop() > 600));
@@ -146,6 +151,8 @@ $(document).ready(function() {
       wow.init();
 
 
+
+
       //----------------------------------------------
 
 /*
@@ -203,17 +210,22 @@ $(document).ready(function() {
       // Mobile Navi Click
       $('nav a').on('click', function(){
        if($('.navbar-toggle').css('display') !='none'){
-           $(".navbar-toggle").trigger( "click" );
+           $('ul.navbar-collapse').slideToggle('fast');
        }
-      });
+     });
 
+      $('button.navbar-toggle').on('click', function() {
+
+        $('ul.navbar-collapse').slideToggle('fast');
+
+      });
 
       //----------------------------------------------
 
 
       // Scroll Up
       $('.scrollup, .logo a').click(function(){
-          $("html, body").animate({ scrollTop: 0 }, 1200, 'easeInOutExpo');
+          $("html, body").animate({ scrollTop: 0 }, 500, 'easeInOutExpo');
           return false;
       });
 
