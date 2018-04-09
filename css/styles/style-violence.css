@@ -915,7 +915,14 @@ header {
 .gallery {
     padding: 50px 0 100px 0;
     position: relative;
-    text-align: center;
+    /*text-align: center;*/
+}
+
+
+.gallery ul {
+  padding: 0 0 20px 20px;
+  margin: 0px 0px 0px 20px;
+  list-style-type: circle;
 }
 
 .gallery img {
