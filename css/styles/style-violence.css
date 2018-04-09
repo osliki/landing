@@ -88,6 +88,7 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto', sans-serif;
+    position:relative;
 }
 
 *::-moz-selection {
@@ -98,6 +99,11 @@ h6 {
 ::selection {
     background: #944d75;
     color: #fff;
+}
+
+.example-img{
+  text-align: center;
+  padding: 10px;
 }
 
 /* Preloader */
@@ -190,7 +196,7 @@ h2 {
     font-size: 36px;
     color: #303030;
     margin-bottom: 30px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .subheadline {
@@ -200,8 +206,16 @@ h2 {
     margin-bottom: 50px;
 }
 
+.soc-links{
+  font-size: 3em;
+}
+
+.testis .fab {
+  font-size: 1.5em;
+}
+
 .heading {
-    display: inline-block;
+    /*display: inline-block;*/
     margin-bottom: 50px;
 }
 
@@ -219,6 +233,7 @@ h2 {
     width: 50px;
     height: 1px;
     background: #ccc;
+    margin: 0 auto;
 }
 
 .heading.center:after {
@@ -365,14 +380,14 @@ section {
 }
 
 .skew .feature:first-child, .skew .download, .skew .testis/*, .skew .newsletter*/ {
-    padding: 140px 0;
+    padding: 50px 0;
 }
 
-.skew .download .first {
+.skew .examples .first {
     bottom: -520px;
 }
 
-.skew .download .second {
+.skew .examples .second {
     bottom: -240px;
 }
 
@@ -654,8 +669,17 @@ header {
 /* Get Started */
 .get-started {
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 50px;
+}
 
+ .token {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    position:relative;
+}
+
+.token .subheadline {
+  margin-bottom: 20px;
 }
 
 .icon-wrap {
@@ -696,7 +720,7 @@ header {
 
 /* Features */
 .feature {
-    padding: 100px 0 80px;
+    padding: 50px 0 80px;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -777,10 +801,10 @@ header {
 }
 
 /* Download */
-.download {
-    padding: 100px 0 60px;
+.examples {
+    padding: 50px 0 60px;
     position: relative;
-    text-align: center;
+    /*text-align: center;*/
     overflow: hidden;
     min-height: 800px;
 }
@@ -822,18 +846,18 @@ header {
     color: #944d75;
 }
 
-.download img {
-    position: absolute;
+.examples img {
+    /*position: absolute;*/
 }
 
-.download .first {
+.examples .first {
     bottom: -480px;
     left: 50%;
     margin-left: -360px;
     z-index: 1;
 }
 
-.download .second {
+.examples .second {
     bottom: -200px;
     left: 50%;
     margin-left: 100px;
@@ -889,7 +913,7 @@ header {
 
 /* Gallery */
 .gallery {
-    padding: 100px 0;
+    padding: 50px 0 100px 0;
     position: relative;
     text-align: center;
 }
@@ -968,7 +992,7 @@ header {
 
 /* Testimonials */
 .testis {
-    padding: 100px 0;
+    padding: 50px 0;
     position: relative;
     text-align: center;
 }
@@ -976,7 +1000,7 @@ header {
 .testis img {
     margin: 0 auto;
     margin-bottom: 10px;
-    border: 3px solid #944d75;
+    border: 2px solid #944d75;
     width: 75px;
 }
 
@@ -1110,7 +1134,7 @@ cite span {
 
 /* Newsletter */
 .newsletter {
-    padding: 0px 0;
+    padding: 50px 0 100px 0;
     position: relative;
 }
 

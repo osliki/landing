@@ -5,11 +5,12 @@
 **********************************/
 
 
-
+var $window =$(window) ;
+var $body = $("body");
       // Preloader Website
-      $(window).load(function() {
-         $('#loader-wrapper').delay(150).fadeOut();
-         $('#loader').delay(200).fadeOut();
+      $window.load(function() {
+         $('#loader-wrapper').delay(50).fadeOut();
+         $('#loader').delay(100).fadeOut();
       });
 
 $(document).ready(function() {
@@ -17,8 +18,9 @@ $(document).ready(function() {
 
       // Sticky Navabr
       $("header").before($(".top-bar").clone().addClass("slidedown"));
-      $(window).on("scroll", function () {
-         $("body").toggleClass("slide-menu", ($(window).scrollTop() > 600));
+
+    $window.on("scroll", function () {
+         $body.toggleClass("slide-menu", ($window.scrollTop() > 600));
       });
 
 
@@ -29,7 +31,7 @@ $(document).ready(function() {
 	    $.scrollIt({
 	      scrollTime: 200,
 	      easing: 'easeInOutExpo',
-	      topOffset: -20,
+	      topOffset: -50,
 	    });
 
 
@@ -119,13 +121,13 @@ $(document).ready(function() {
 
 
       // Gallery
-      $('#carousel-gallery').magnificPopup({
+      /*$('#carousel-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
         gallery:{
           enabled:true
         }
-      });
+      });*/
 
 
       //----------------------------------------------
@@ -189,10 +191,10 @@ $(document).ready(function() {
 
 
       // Particles
-      $('.particles header').particleground({
+    /*  $('.particles header').particleground({
           dotColor: '#fff',
           lineColor: '#fff'
-      });
+      });*/
 
 
       //----------------------------------------------
