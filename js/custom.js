@@ -114,7 +114,7 @@ $(document).ready(function() {
 
 
       // Tooltip
-      $('[data-toggle="tooltip"]').tooltip()
+///      $('[data-toggle="tooltip"]').tooltip()
 
 
       //-----------------------------------------------
